@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='/javascripts/shortUrl.js'></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Suggestion: Enter www.facebook.com insted of https://www.facebook.com</p>
+    <table>
+    	<tr>
+    		<td>Enter Long Url:</td>
+    		<td><input type="text" id='longUrl'></td>
+    	</tr>
+    	<tr>
+    		<td><button onclick='generateShotUrl(longUrl)'>Generate Url</button></td>
+    	</tr>
+    </table>
+    <p id='shortUrl'></p>
+  </body>
+</html>
